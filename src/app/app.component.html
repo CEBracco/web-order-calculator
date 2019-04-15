@@ -1,1 +1,39 @@
-<router-outlet></router-outlet>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flor Barrau Fotografía</title>
+</head>
+<header>
+    <div class="navbar">
+        <img class="logo" src="/assets/imgs/logo.png">
+        <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-flag fa-stack-1x fa-inverse"></i>
+        </span>
+        <div id="navbar-items" class="ui right floated secondary menu">
+            <a class="<!--active--> item">
+                Sesiones
+            </a>
+            <a class="item">
+                Eventos
+            </a>
+            <a class="item">
+                Publicidad
+            </a>
+            <a class="item">
+                Hogar y Decoración
+            </a>
+            <a class="item">
+                Contacto
+            </a>
+        </div>
+    </div>
+</header>
+<body>
+    <section class="section" style="background-color: #00b5ad"></section>
+    <router-outlet></router-outlet>
+</body>
+</html>
