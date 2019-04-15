@@ -28,12 +28,13 @@
             ],
             "styles": [
               "node_modules/semantic/dist/semantic.min.css",
-              "node_modules/font-awesome/css/font-awesome.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.scss"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/semantic/dist/semantic.min.js"
+              "node_modules/semantic/dist/semantic.min.js",
+              "node_modules/@fortawesome/fontawesome-free/js/all.min.js"
             ],
             "es5BrowserSupport": true
           },
