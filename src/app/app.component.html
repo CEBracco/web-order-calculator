@@ -23,8 +23,10 @@
             </div>
         </div>
         <img class="logo" src="/assets/imgs/logo.png" *ngIf="showLogo">
-        <div id="navbar-items" class="ui right floated secondary menu">
-            <a class="<!--active--> item">
+        <div id="navbar-items" 
+            class="ui right floated secondary menu" 
+            [ngClass]="{'dark':darkItems}">
+            <a class="item">
                 Sesiones
             </a>
             <a class="item">
@@ -44,6 +46,21 @@
 </header>
 <body>
     <!-- <router-outlet></router-outlet> -->
+    <div class="social-icons footer" *ngIf="showLogo" [ngClass]="{'dark':darkItems}">
+        <div class="item">
+            <i class="fab fa-instagram fa-inverse fa-lg"></i>
+        </div>
+        <div class="item">
+            <i class="fab fa-500px fa-inverse fa-lg"></i>
+        </div>
+        <div class="item">
+            <i class="fab fa-whatsapp fa-inverse fa-lg"></i>
+        </div>
+        <div class="item">
+            <i class="fab fa-facebook fa-inverse fa-lg"></i>
+        </div>
+    </div>
     <app-home></app-home>
+    <app-sessions></app-sessions>
 </body>
 </html>

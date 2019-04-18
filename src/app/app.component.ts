@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  showLogo = false;
+  showLogo = true;
+  darkItems = true;
 }
