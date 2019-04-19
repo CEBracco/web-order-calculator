@@ -29,14 +29,16 @@
             "styles": [
               "node_modules/semantic/dist/semantic.min.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "node_modules/animate.css/animate.min.css",
               "src/styles.scss"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/semantic/dist/semantic.min.js",
               "node_modules/@fortawesome/fontawesome-free/js/all.min.js",
-              "node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js",
-              "node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"
+              "node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js",
+              "node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js",
+              "src/assets/js/animate.js"
             ],
             "es5BrowserSupport": true
           },
