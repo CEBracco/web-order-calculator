@@ -1,21 +1,31 @@
+@import '/styles/colors';
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
 * {
-  font-family: 'Roboto Condensed', sans-serif !important;
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
+body ::-webkit-scrollbar {
+    width: 0px;
+}
+html,body {
+    overflow-x: inherit;
 }
 
 .navbar {
     position: fixed;
     padding: 10px 15px 10px 15px;
     width: 100%;
+    z-index: 1;
 }
 .navbar .logo {
     height: 100px;
+    animation: slide-up 0.4s ease;
 }
 
 .social-icons {
     position: fixed;
     margin-top: 2px;
+    z-index: 1;
 }
 .social-icons.footer {
     bottom: 15px;
@@ -28,6 +38,9 @@
     border-radius: 50%;
     float: left;
     margin: 0px 5px 0px 5px;
+    transition: background-color 0.2s;
+    transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+    animation: slide-up 0.4s ease;
 }
 .social-icons .item:hover {
     background: rgba(255,255,255,.45);
@@ -44,21 +57,56 @@
 }
 #navbar-items .item {
     color: white;
+    transition: background-color 0.2s, color 0.5s;
+    transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 #navbar-items .active.item,#navbar-items .item:hover {
-    background: rgba(255,255,255,.25);
+    background-color: rgba(255,255,255,.25);
 }
 #navbar-items.dark .item {
     color: black;
     text-shadow: 1px 0 0 #00000015, -1px 0 0 #00000015, 0 1px 0 #00000015, 0 -1px 0 #00000015, 1px 1px #00000015, -1px -1px 0 #00000015, 1px -1px 0 #00000015, -1px 1px 0 #00000015;
 }
 #navbar-items.dark .active.item,#navbar-items.dark .item:hover {
-    background: rgba(100, 100, 100, 0.45);
+    background-color: rgba(100, 100, 100, 0.45);
 }
 
 .section {
     height: 100vh;
+    margin-bottom: 75vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.aside {
+    height: 100vh;
+    width: 30vw;
+    background-color: rgba(255, 255, 255, 0.72);
+    border-right: #e3e3e3 solid;
+    position: absolute;
+    text-align: center;
+    padding: 32vh 3vh 0 3vh;
+    color: $pink-accent;
+}
+.aside-left {
+    border-right: #e3e3e3 solid;
+}
+.aside-right {
+    border-left: #e3e3e3 solid;
+    right: 0px;
+}
+.aside-image {
+    padding: 10px 20%;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

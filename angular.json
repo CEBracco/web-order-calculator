@@ -34,7 +34,9 @@
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/semantic/dist/semantic.min.js",
-              "node_modules/@fortawesome/fontawesome-free/js/all.min.js"
+              "node_modules/@fortawesome/fontawesome-free/js/all.min.js",
+              "node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js",
+              "node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"
             ],
             "es5BrowserSupport": true
           },
