@@ -61,6 +61,8 @@ export class AppComponent implements AfterViewInit {
     // TODO: use component vars to configure icons
     let sectionIconsConfig = [
       { id: 'home', showLogo:false, darkItems: false },
+      { id: 'events', showLogo: true, darkItems: true },
+      { id: 'marketing', showLogo: true, darkItems: false },
       { id: 'sessions', showLogo: true, darkItems: true }
     ];
     let config = sectionIconsConfig.find(config => config.id == id);
